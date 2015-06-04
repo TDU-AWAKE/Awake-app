@@ -1,4 +1,5 @@
 SampleApp::Application.routes.draw do
+  get "chat/index"
   get "users/new"
 
   root 'static_pages#home'
