@@ -17,8 +17,6 @@
 
   var ws_rails = new WebSocketRails("awk-web-socket.herokuapp.com/websocket");
 
-
-
   // メッセージ受信時の処理
 
   ws_rails.bind("websocket_chat", function(message){
@@ -28,7 +26,7 @@
     message_li.textContent = message;
 
     
-
+  
     document.getElementById("chat_area").appendChild(message_li);
 
   })

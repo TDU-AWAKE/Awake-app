@@ -8,7 +8,7 @@ describe "Static pages" do
     before { visit root_path }
     
     it { should have_content('Team Awake') }
-    it { should have_title("Ruby on Rails Tutorial Sample App") }
+    it { should have_title("Awake App") }
     it { should_not have_title('| Home') }
   end
   
