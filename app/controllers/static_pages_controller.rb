@@ -13,8 +13,8 @@ class StaticPagesController < ApplicationController
     p data = params[:data].gsub("_", ".").to_f
     p uid = params[:uid]
     
-    sdata = Sdata.new(user_id: uid, sdata: data)
-    sdata.save
+    data = Sdata.new(user_id: uid, sdata: data)
+    data.save
 
   #   data = Pdata.create!
   end
