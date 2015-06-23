@@ -6,5 +6,6 @@ class StaticPagesController < ApplicationController
   end
 
   def about
+    render :text => params
   end
 end
