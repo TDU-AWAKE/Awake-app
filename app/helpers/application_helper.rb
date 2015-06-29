@@ -1,9 +1,7 @@
-# coding: utf-8
 module ApplicationHelper
-
-  # ページごとの完全なタイトルを返す。
+  # ページごとの完全なタイトルを返します。
   def full_title(page_title)
-    base_title = "Awake App"
+    base_title = "Ruby on Rails Tutorial Sample App"
     if page_title.empty?
       base_title
     else
@@ -11,3 +9,4 @@ module ApplicationHelper
     end
   end
 end
+
