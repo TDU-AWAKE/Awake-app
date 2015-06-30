@@ -43,7 +43,7 @@ begin
   end
   desc 'Alias for cucumber:ok'
   task :cucumber => 'cucumber:ok'
-I
+
   task :default => :cucumber
 
   task :features => :cucumber do
