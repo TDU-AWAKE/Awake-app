@@ -4,7 +4,8 @@ class SdataController < ApplicationController
     render :text => params
 
     
-    p sleepdata = params[:sleepdata].gsub("_",".") # Nomethoderror
+    p sleepdata = "%x{params[:sleepdata]}".gsub("_",".").to_f # 苦肉策
+    # paramsってStringクラス継承してないの？
     p twitterid = params[:twitterid]
     p uuid = params[:uuid]
 
