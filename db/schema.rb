@@ -13,15 +13,6 @@
 
 ActiveRecord::Schema.define(version: 20150703064545) do
 
-  create_table "sdata", force: true do |t|
-    t.integer  "user_id"
-    t.float    "sdata"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "sdata", ["user_id", "created_at"], name: "index_sdata_on_user_id_and_created_at"
-
   create_table "sleepdata", force: true do |t|
     t.string   "twitterid"
     t.string   "uuid"

@@ -12,6 +12,8 @@ gem 'faker', '1.1.2'
 gem 'will_paginate', '3.0.4'
 gem 'bootstrap-will_paginate', '0.0.9'
 gem 'websocket-rails'
+gem 'rmagick'
+gem 'gruff'
 
 # Use sqlite3 as the database for Active Record
 group :development, :test do
