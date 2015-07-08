@@ -1,4 +1,5 @@
 SampleApp::Application.routes.draw do
+  get "sdata/datapost"
   resources :users  
   resources :sessions, only: [ :new, :create, :destroy]
 
@@ -9,6 +10,9 @@ SampleApp::Application.routes.draw do
   match '/help',    to: 'static_pages#help',    via: 'get'
   match '/about',   to: 'static_pages#about',   via: 'get'
   match '/contact', to: 'static_pages#contact', via: 'get'
+
+  get "sdata/datapost/:twitterid/:uuid/:data" => "sdata#datapost"
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
