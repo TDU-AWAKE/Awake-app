@@ -11,15 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150703064545) do
-
-  create_table "sleepdata", force: true do |t|
-    t.string   "twitterid"
-    t.string   "uuid"
-    t.float    "sleepdata"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
+ActiveRecord::Schema.define(version: 20150712113217) do
 
   create_table "users", force: true do |t|
     t.string   "name"
@@ -28,7 +20,18 @@ ActiveRecord::Schema.define(version: 20150703064545) do
     t.datetime "updated_at"
     t.string   "password_digest"
     t.string   "remember_token"
-    t.boolean  "admin",           default: false
+    t.boolean  "admin",                default: false
+    t.string   "reset_password_token"
+    t.datetime "remember_created_at"
+    t.string   "confirmation_token"
+    t.datetime "confirmed_at"
+    t.datetime "confirmation_sent_at"
+    t.string   "unconfirmed_email"
+    t.integer  "failed_attempts",      default: 0,     null: false
+    t.string   "unlock_token"
+    t.datetime "locked_at"
+    t.string   "uid"
+    t.string   "provider"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true

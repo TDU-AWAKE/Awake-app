@@ -12,13 +12,10 @@ gem 'faker', '1.1.2'
 gem 'will_paginate', '3.0.4'
 gem 'bootstrap-will_paginate', '0.0.9'
 gem 'websocket-rails'
-gem 'rmagick'
-
-gem 'chartkick'
-
-# gem 'gruff'
-# gem 'gnuplot'
-
+gem 'devise'
+gem 'omniauth'
+gem 'omniauth-facebook'
+gem 'omniauth-twitter'
 
 # Use sqlite3 as the database for Active Record
 group :development, :test do
@@ -78,7 +75,6 @@ end
 group :production do
 	gem 'pg', '0.15.1'
 	gem 'rails_12factor', '0.0.2'
-        gem 'mysql2'
 end
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
