@@ -16,8 +16,6 @@ gem 'websocket-rails'
 
 gem 'chartkick'
 
-# gem 'gruff'
-# gem 'gnuplot'
 
 
 # Use sqlite3 as the database for Active Record
